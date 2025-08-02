@@ -18,7 +18,7 @@ public class CouponController {
 
     private final CouponService couponService;
 
-    // ✅ Create a new coupon with logging
+
     @PostMapping
     public ResponseEntity<?> createCoupon(@Valid @RequestBody Coupon coupon) {
         System.out.println("📥 Received coupon from frontend: " + coupon); // Debug log
